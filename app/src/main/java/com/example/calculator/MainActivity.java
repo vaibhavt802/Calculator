@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
     public Button btndiv;
     public TextView txtview;
     public double first;
+
+    public Button getBtnsub() {
+        return btnsub;
+    }
+
     public double second;
 
     @Override
