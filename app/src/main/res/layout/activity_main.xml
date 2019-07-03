@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#585858"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/first_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:hint="num1"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="number"
+        android:onClick="enterFirst" />
+
+    <EditText
+        android:id="@+id/second_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/first_number"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:hint="num2"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="number"
+        android:onClick="enterSecond" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_below="@id/second_number"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClickBtnAdd"
+        android:text="+"
+        android:background="@drawable/rounded_btn"
+        android:textColor="@color/colorbtntext"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_below="@id/second_number"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickBtnSub"
+        android:text="-"
+        android:background="@drawable/rounded_btn"
+        android:textColor="@color/colorbtntext"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_below="@id/add"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClickBtnMul"
+        android:text="*"
+        android:background="@drawable/rounded_btn"
+        android:textColor="@color/colorbtntext"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_below="@id/sub"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickBtnDiv"
+        android:text="/"
+        android:background="@drawable/rounded_btn"
+        android:textColor="@color/colorbtntext"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@id/mul"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="Ans = "
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
